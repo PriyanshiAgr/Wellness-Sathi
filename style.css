@@ -1,0 +1,54 @@
+div.domain img,p{
+    display: inline-block;
+}
+div.domain img {
+    height: 60px;
+    margin-left: 15px;
+}
+div.domain p{
+    font-family: Lobster Two, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+}
+nav a{
+    text-decoration: none;
+    font-family: 'Lobster Two';
+    font-size: 30px;
+    padding-left: 20px;
+    cursor: pointer;
+    margin: 5px;
+    color: black;
+}
+nav img{
+    height: 50px;
+}
+div.domain, nav{
+    display: inline-block;
+}
+nav{
+    margin-left: 735px;
+}
+div.img1{
+    margin-left: 900px;
+    margin-top: 60px;
+}
+div.text h1.first{
+    margin-top: -450px;
+    margin-left: 240px;
+    font-family: 'Barriecito';
+    font-size: 95px;
+    color: rgb(255, 179, 0);
+}
+div.text h1.second{
+    margin-top: -90px;
+    margin-left: 290px;
+    font-family: 'Kaushan Script';
+    font-size: 105px;
+    color: rgb(255, 0, 144);
+}
+div.text h1.third{
+    margin-top: -90px;
+    margin-left: 240px;
+    font-family: 'Barriecito';
+    font-size: 95px;
+    color: rgb(255, 179, 0);
+}
