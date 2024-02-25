@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(252, 245, 236);
+}
+
 div.domain img,p{
     display: inline-block;
 }
@@ -25,12 +29,13 @@ div.domain, nav{
     display: inline-block;
 }
 nav{
-    margin-left: 735px;
+    margin-left: 690px;
 }
 div.img1{
     margin-left: 900px;
     margin-top: 60px;
 }
+
 div.text h1.first{
     margin-top: -450px;
     margin-left: 240px;
@@ -43,12 +48,264 @@ div.text h1.second{
     margin-left: 290px;
     font-family: 'Kaushan Script';
     font-size: 105px;
-    color: rgb(255, 0, 144);
+    color: #ff0090;
 }
 div.text h1.third{
     margin-top: -90px;
     margin-left: 240px;
     font-family: 'Barriecito';
     font-size: 95px;
-    color: rgb(255, 179, 0);
+    color: #ffb300;
+}
+div.img4{
+    margin-left: 105px;
+    margin-top: -565px;
+}
+div.img4 img{
+    height: 240px;
+    transform: rotate(-10deg);
+}
+div.img6{
+    margin-left: 480px;
+    margin-top: 100px;
+}
+div.img6 img{
+    height: 300px;
+    transform: rotate(-10deg);
+}
+div.flashcards img{
+    height: 420px;
+    margin-left: 28px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px rgb(185, 133, 0);
+    transition: all 1s;
+}
+div.flashcards img:hover{
+    transform: scale(1.05);
+}
+div.flashcards{
+    margin-left: 110px;
+    margin-top: 40px;
+}
+div.chart{
+    background-color: rgba(255, 255, 255, 0.778);
+    width: 1300px;
+    height: 1500px;
+    margin-left: 80px;
+    padding-left: 50px;
+    padding-top: 30px;
+    border-radius: 30px;
+}
+div#top_x_div{
+    margin-top: 5px;
+}
+div.stats h2{
+    margin-top: 100px;
+    font-family: 'Lobster Two';
+    font-size: 45px;
+    text-align: center;
+}
+div.stats h3{
+    font-family: 'Inter';
+    font-size: 20px;
+}
+div.primary h3,p{
+    display: inline-block;
+}
+div.primary h3{
+    font-weight: 500;
+}
+div.primary p{
+    font-family: 'Inter';
+    margin-right: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+div.primary{
+    background-color: rgba(255, 255, 255, 0.567);
+    margin-left: 5px;
+    margin-top: 0px;
+    color: rgb(109, 109, 109);
+}
+div.secondary{
+    margin-left: 450px;
+    margin-top: -350px;
+}
+div.third{
+    margin-top: 50px;
+}
+div.third #calendar_basic{
+    margin-left: 160px;
+    margin-top: -20px;
+}
+div.third p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 450;
+    color: rgb(73, 73, 73);
+    margin-left: 170px;
+}
+div.forth p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 450;
+    color: rgb(73, 73, 73);
+}
+div.fifth p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 450;
+    color: rgb(73, 73, 73);
+    margin-left: 10px;
+}
+div.sixth p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 450;
+    color: rgb(73, 73, 73);
+    margin-left: 10px;
+}
+div.forth{
+    margin-top: -370px;
+}
+div #donutchart{
+    margin-top: -65px;
+    margin-left: -50px;
+}
+div.fifth{
+    margin-left: 480px;
+    margin-top: -385px;
+}
+#top_y_div{
+    margin-top: -10px;
+}
+div.sixth #curve_chart{
+    margin-top: 30px;
+    margin-left: -30px
+}
+div.planner button{
+    padding: 20px 35px 20px 35px;
+    border-radius: 50%;
+    font-size: 50px;
+    font-family: 'Indie Flower';
+    font-weight: 800;
+    margin-left: 30px;
+    background-color: #ffe100;
+    border-style: none;
+    transition: all 1s;
+}
+div.planner button.rec{
+    background-color: #ff0090;
+    border-style: double;
+    border-color: #ffffff;
+    border-width: 5px;
+    color: #ffffff;
+    font-size: 60px;
+    cursor: pointer;
+}
+div.planner h2{
+    margin-top: 100px;
+    font-family: 'Lobster Two';
+    font-size: 45px;
+    text-align: center;
+}
+div.buts{
+    background-color: rgb(255, 255, 255);
+    margin-left: 360px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 800px;
+    border-radius: 90px;
+}
+button:hover{
+    transform: scale(1.05);
+}
+div.tips h2{
+    margin-top: 100px;
+    font-family: 'Lobster Two';
+    font-size: 45px;
+    text-align: center;
+}
+div.alltips{
+    background-color: white;
+    width: 900px;
+    height: 970px;
+    border-radius: 40px;
+    margin-left: 300px;
+    padding: 20px;
+}
+div.alltips ul{
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    font-family: 'Indie Flower';
+    font-size: 25px;
+    font-weight: 500;
+}
+ul li{
+    margin-bottom: 13px;
+}
+div.contactMe{
+  height: 700px;
+  margin-top: 120px;
+  margin-right: -8px;
+  margin-left: -8px;
+}
+h2.contactme{
+    margin-top: 30px;
+    font-size: 50px;
+    font-family:'Lobster Two';
+    padding-top: 50px;
+    text-align: center;
+    color:var(--secondary-color);
+}
+textarea.msg{
+    text-align: start;
+    padding: 15px;
+  border-radius: 25px;
+  width: 600px;
+  border: none;
+  outline: none;
+  background: rgba(255, 255, 255, 0.689);
+  margin-bottom: 1rem;
+  resize: none;
+  height: 200px;
+}
+button.submit{
+    padding-left: 2px;    
+    padding-right: 2px;    
+    padding-top: 2px;    
+    padding-bottom: 2px;    
+    background-color: rgb(253, 179, 67);
+    border: none;
+    text-align: center;
+    font-size: 35px;
+    font-family:'Lobster Two';
+    height:45px;
+    width: 150px;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px  rgba(168, 168, 167, 0.733);
+    cursor:pointer;
+    margin-left: 250px;
+}
+.submit:hover{
+    background-color: white;
+    color: rgb(255, 156, 75);
+    border-color: rgb(255, 156, 75);
+    border-width: 2px;
+}
+input , textarea{
+    width: 600px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.689);
+    text-decoration: none;
+    outline: none;
+    padding: 20px;
+}
+form{
+    margin-left: 450px;
 }
