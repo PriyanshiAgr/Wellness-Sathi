@@ -26,6 +26,318 @@
         href="https://fonts.googleapis.com/css2?family=Barriecito&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barriecito&family=Indie+Flower&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barriecito&family=Indie+Flower&family=Inter:wght@100..900&family=Kaushan+Script&family=Lobster&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!--BMI Piechart-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawStuff);
+
+        function drawStuff() {
+            var data = new google.visualization.arrayToDataTable([
+                ['Montn', 'BMI'],
+                ["January", 23.2],
+                ["February", 21.8],
+                ["March", 0],
+                ["April", 0],
+                ['...', 0]
+            ]);
+
+            var options = {
+                width: 350,
+                legend: { position: 'none' },
+                chart: {
+                    title: 'Monthly BMI',
+                    backgroundColor: 'transparent'
+                },
+                axes: {
+                    x: {
+                        0: { side: 'top', label: 'Year 2024' } // Top x-axis.
+                    }
+                },
+                bar: { groupWidth: "90%" },
+                colors: ['#ffb300']
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+            // Convert the Classic options to Material options.
+            chart.draw(data, google.charts.Bar.convertOptions(options));
+        };
+    </script>
+    <!--Workout Duration-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['line'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = new google.visualization.DataTable();
+            data.addColumn('number', 'February 2024');
+            data.addColumn('number', 'Physical Activity');
+
+            data.addRows([
+                [1, 20],
+                [2, 25],
+                [3, 25],
+                [4, 35],
+                [5, 20],
+                [6, 25],
+                [7, 20],
+                [8, 30],
+                [9, 35],
+                [10, 40],
+                [11, 45],
+                [12, 35],
+                [13, 30],
+                [14, 15],
+                [15, 25],
+                [16, 25],
+                [17, 30],
+                [18, 30],
+                [19, 35],
+                [20, 28],
+                [21, 30],
+                [22, 40],
+                [23, 45],
+                [24, 30],
+                [25, 45],
+                [26, 40],
+                [27, 35],
+                [28, 35],
+                [29, 45]
+            ]);
+
+            var options = {
+                chart: {
+                    title: 'Workout Duration',
+                },
+                width: 800,
+                height: 350,
+                axes: {
+                    x: {
+                        0: { side: 'top' }
+                    }
+                },
+                lineWidth: 30,
+                colors: ['#ff0090'],
+                hAxis: { maxValue: 30 },
+                vAxis: { maxValue: 60 },
+            };
+
+            var chart = new google.charts.Line(document.getElementById('line_top_x'));
+
+            chart.draw(data, google.charts.Line.convertOptions(options));
+        }
+    </script>
+
+    <!--Sleep Pattern-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["calendar"] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var dataTable = new google.visualization.DataTable();
+            dataTable.addColumn({ type: 'date', id: 'Quality' });
+            dataTable.addColumn({ type: 'number', id: 'good/poor' });
+            dataTable.addRows([
+                [new Date(2024, 0, 1), 6],
+                [new Date(2024, 0, 2), 7],
+                [new Date(2024, 0, 3), 7],
+                [new Date(2024, 0, 4), 8],
+                [new Date(2024, 0, 5), 5],
+                [new Date(2024, 0, 6), 6],
+                [new Date(2024, 0, 7), 7],
+                [new Date(2024, 0, 8), 7],
+                [new Date(2024, 0, 9), 8],
+                [new Date(2024, 0, 10), 6],
+                [new Date(2024, 0, 11), 7],
+                [new Date(2024, 0, 12), 7],
+                [new Date(2024, 0, 13), 8],
+                [new Date(2024, 0, 14), 5],
+                [new Date(2024, 0, 15), 6],
+                [new Date(2024, 0, 16), 7],
+                [new Date(2024, 0, 17), 7],
+                [new Date(2024, 0, 18), 8],
+                [new Date(2024, 0, 19), 6],
+                [new Date(2024, 0, 20), 7],
+                [new Date(2024, 0, 21), 7],
+                [new Date(2024, 0, 22), 8],
+                [new Date(2024, 0, 23), 5],
+                [new Date(2024, 0, 24), 6],
+                [new Date(2024, 0, 25), 7],
+                [new Date(2024, 0, 26), 7],
+                [new Date(2024, 0, 27), 8],
+                [new Date(2024, 0, 28), 8],
+                [new Date(2024, 0, 29), 1],
+                [new Date(2024, 0, 30), 3],
+                [new Date(2024, 0, 31), 8],
+                [new Date(2024, 1, 1), 6],
+                [new Date(2024, 1, 2), 7],
+                [new Date(2024, 1, 3), 9],
+                [new Date(2024, 1, 4), 8],
+                [new Date(2024, 1, 5), 5],
+                [new Date(2024, 1, 6), 6],
+                [new Date(2024, 1, 7), 7],
+                [new Date(2024, 1, 8), 7],
+                [new Date(2024, 1, 9), 8],
+                [new Date(2024, 1, 10), 5],
+                [new Date(2024, 1, 11), 6],
+                [new Date(2024, 1, 12), 6],
+                [new Date(2024, 1, 13), 4],
+                [new Date(2024, 1, 14), 8],
+                [new Date(2024, 1, 15), 7],
+                [new Date(2024, 1, 16), 6],
+                [new Date(2024, 1, 17), 3],
+                [new Date(2024, 1, 18), 5],
+                [new Date(2024, 1, 19), 5],
+                [new Date(2024, 1, 20), 6],
+                [new Date(2024, 1, 21), 6],
+                [new Date(2024, 1, 22), 7],
+                [new Date(2024, 1, 23), 7],
+                [new Date(2024, 1, 24), 8],
+                [new Date(2024, 1, 25), 5],
+                [new Date(2024, 1, 26), 4],
+                [new Date(2024, 1, 27), 3],
+                [new Date(2024, 1, 28), 7],
+                [new Date(2024, 1, 29), 7]
+            ]);
+
+            var chart = new google.visualization.Calendar(document.getElementById('calendar_basic'));
+
+            var options = {
+                height: 350,
+            };
+            chart.draw(dataTable, options);
+        }
+    </script>
+
+    <!--Nutritions-->
+    <script type="text/javascript">
+        google.charts.load("current", { packages: ["corechart"] });
+        google.charts.setOnLoadCallback(drawChart);
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['nutrition', 'percent'],
+                ['Carbs', 45],
+                ['Fats', 35],
+                ['Proteins', 20]
+            ]);
+
+            var options = {
+                pieHole: 0.4,
+                backgroundColor: 'transparent'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+        }
+    </script>
+
+    <!--Screen Time-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['bar'] });
+        google.charts.setOnLoadCallback(drawStuff);
+
+        function drawStuff() {
+            var data = new google.visualization.arrayToDataTable([
+                ['days', 'hrs'],
+                ["21 Feb", 10],
+                ["22 Feb", 7],
+                ["23 Feb", 9],
+                ["24 Feb", 8],
+                ['25 Feb', 9],
+                ['26 Feb', 6]
+            ]);
+
+            var options = {
+                title: 'Chess opening moves',
+                width: 900,
+                legend: { position: 'none' },
+                chart: {
+                    backgroundColor: 'transparent'
+                },
+                width: 800,
+                height: 300,
+                bars: 'horizontal', // Required for Material Bar Charts.
+                axes: {
+                    x: {
+                        0: { side: 'top', label: 'Percentage' } // Top x-axis.
+                    }
+                },
+                bar: { groupWidth: "10%" },
+                colors: ['#ff0090']
+            };
+
+            var chart = new google.charts.Bar(document.getElementById('top_y_div'));
+            chart.draw(data, options);
+        };
+    </script>
+
+    <!--Mental Health-->
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['day', 'Mental Value'],
+                ['1', 7],
+                ['2', 5],
+                ['3', 6],
+                ['4', 8],
+                ['5', 3],
+                ['6', 4],
+                ['7', 2],
+                ['8', 7],
+                ['9', 8],
+                ['10', 9],
+                ['11', 7],
+                ['12', 8],
+                ['13', 6],
+                ['14', 4],
+                ['15', 5],
+                ['16', 5],
+                ['17', 6],
+                ['18', 8],
+                ['19', 7],
+                ['20', 6],
+                ['21', 8],
+                ['22', 6],
+                ['23', 9],
+                ['24', 8],
+                ['25', 8],
+                ['26', 5],
+                ['27', 7],
+                ['28', 8],
+                ['29', 9]
+            ]);
+
+            var options = {
+                backgroundColor: 'transparent',
+                curveType: 'function',
+                legend: { position: 'bottom' }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -35,10 +347,11 @@
         <p>Domain Name</p>
     </div>
     <nav class="NavBar">
-        <a href="#">Stats</a>
-        <a href="#">Tips</a>
-        <a href="#">FAQs</a>
-        <a href="#">Contact Us</a>
+        <a href="#stats">Stats</a>
+        <a href="#planner">Planner</a>
+        <a href="#tips">Tips</a>
+        <!--<a href="#">FAQs</a>-->
+        <a href="#contact">Contact Us</a>
         <a href="#"><img src="images/profile1.png" alt="profile"></a>
     </nav>
     <div class="img1">
@@ -48,6 +361,99 @@
         <h1 class="first">Make Your</h1>
         <h1 class="second">Health</h1>
         <h1 class="third">a priority</h1>
+    </div>
+    <div class="img4">
+        <img src="images/img4.png" alt="flower">
+    </div>
+    <div class="img6">
+        <img src="images/img6.png" alt="flower">
+    </div>
+    <div class="flashcards">
+        <img src="images/card1.png" alt="c1">
+        <img src="images/card2.png" alt="c2">
+        <img src="images/card3.png" alt="c3">
+        <img src="images/card4.png" alt="c4">
+    </div>
+    <div class="stats" id="stats">
+        <h2>Statistics</h2>
+        <div class="chart">
+            <div class="primary">
+                <h3>Age: </h3>
+                <p> 21</p>
+                <h3>Height: </h3>
+                <p> 161cm</p>
+                <h3>Weight: </h3>
+                <p> 78kg</p>
+                <div id="top_x_div" style="width: 500px; height: 350px;"></div>
+            </div>
+            <div class="secondary">
+                <div id="line_top_x"></div>
+            </div>
+            <div class="third">
+                <p>Sleep Schedule</p>
+                <div id="calendar_basic" style="width: 1200px; height: 600px;"></div>
+            </div>
+            <div class="forth">
+                <p>Daily Nutritions</p>
+                <div id="donutchart" style="width: 700px; height: 400px;"></div>
+            </div>
+            <div class="fifth">
+                <p>Screen Time</p>
+                <div id="top_y_div" style="width: 200px; height: 400px;"></div>
+            </div>
+            <div class="sixth">
+                <p>Mental Health</p>
+                <div id="curve_chart"></div>
+            </div>
+        </div>
+    </div>
+    <div class="planner" id="planner">
+        <h2>Daily Planner</h2>
+        <div class="buts">
+            <button>24</button>
+            <button>25</button>
+            <button class="rec">26</button>
+            <button>27</button>
+            <button>28</button>
+        </div>
+    </div>
+    <div class="tips" id="tips">
+        <h2>Tips</h2>
+        <div class="alltips">
+            <ul>
+                <li>Engage in regular physical activity, such as walking, jogging, cycling, or swimming, for at least 30
+                    minutes most days of the week.
+                </li>
+                <li>Incorporate strength training exercises to build muscle and improve bone health. Find activities you
+                    enjoy to make exercise a fun and sustainable part of your routine.
+                </li>
+                <li>Focus on consuming a variety of nutrient-rich foods, including fruits, vegetables, whole grains,
+                    lean proteins, and healthy fats. Limit intake of processed foods, sugary snacks, and unhealthy fats.
+                </li>
+                <li>Drink plenty of water throughout the day to stay hydrated and support bodily functions. Limit consumption of sugary drinks and opt for water, herbal teas, or infused water for hydration.
+                    </li>
+                <li>Aim for 7-9 hours of quality sleep each night to support physical and mental health. Create a relaxing bedtime routine and maintain a consistent sleep schedule.
+                    </li>
+                <li>Keep electronic devices out of the bedroom and create a sleep-friendly environment.
+                </li>
+                <li>Practice stress-reduction techniques such as deep breathing, meditation, yoga, or mindfulness to cope with daily stressors.
+                </li>
+                <li>Prioritize activities that promote mental well-being, such as hobbies, spending time with loved ones, or seeking professional help if needed.
+                </li>
+                <li>Schedule regular check-ups with your healthcare provider for preventive care, screenings, and vaccinations.
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contactMe" id="contact">
+        <h2 class="contactme">Contact <i class="fa-solid fa-address-card fa-bounce"></i></h2>
+        <form action="">
+            <input type="text" placeholder="Your Name"></Input><br><br>
+            <input type="email" placeholder="Your Email"></Input><br><br>
+            <input type="tel" placeholder="Your Phone Number"></Input><br><br>
+            <textarea placeholder="Write Message Here ..." class="msg"></textarea><br>
+            <button class="submit">Submit</button>
+        </form>
     </div>
 </body>
 
