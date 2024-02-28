@@ -11,3 +11,6 @@ Our website solves the problem of fragmented wellness management by providing a 
 
 Technologies used:
 HTML, CSS, JavaScript, Bootstrap
+
+Project link:
+https://priyanshiagr.github.io/Hack_Wizards/
