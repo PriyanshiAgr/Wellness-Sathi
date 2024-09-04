@@ -9,4 +9,4 @@ Technologies used:
 HTML, CSS, JavaScript, Bootstrap
 
 Project link:
-https://priyanshiagr.github.io/Hack_Wizards/
+https://priyanshiagr.github.io/Wellness-Sathi/
